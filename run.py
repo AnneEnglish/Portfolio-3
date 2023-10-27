@@ -5,7 +5,7 @@ import click
 
 import gspread
 
-# Google Sheets API credentials
+# Google Sheets API scope and credentials
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -28,7 +28,7 @@ def cli():
 @cli.command()
 @click.argument('survey_results', type=str, help='Survey Results')
 @click.argument('survey_results_output', type=str, help='CSV file for analyzing results')
-def export_data(survey_results, survey_results_output):
+def import_data(survey_results, survey_results_output):
     try:
         SHEET = GSPREAD_CLIENT.open('survey_results')
         results = SHEET.worksheet('results')
