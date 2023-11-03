@@ -21,7 +21,16 @@ def import_data(survey_results):
     """
     This function imports data from a Google Sheet.
     It then returns that data as a Pandas DataFrame.
+
+    Args: 
+        survey_results (str): The name of the Google Sheet
+    
+    Returns:
+        pd.DataFrame: The survey data as Pandas DataFrame.
     """
+    if not survey_results:
+        raise ValueError('survey_results cannot be empty.')
+
     try:
         sheet = GSPREAD_CLIENT.open(survey_results)
         worksheet = sheet.get_worksheet(0)
@@ -37,7 +46,22 @@ def analyze_data(df):
 
     Args:
         df (pd.DataFrame): The survey data as Pandas DataFrame.
+    
+    Returns:
+        None
     """
+    if df.empty:
+        raise ValueError('The DataFrame is empty.')
+
+    required_columns = ['Do you feel focused in class?',
+                        'Please select your gender below:',
+                        'What do you use to study primarily?'
+                        ]
+
+    for column in required_columns:
+        if column not in df.columns:
+            raise ValueError("The column '{column}' is not in DataFrame")
+
     total_participants = len(df)
 
     try:
@@ -90,7 +114,17 @@ def analyze_data(df):
 def export_data(df, output_file):
     """
     Function to export analyzed data to a CSV file.
+
+    Args:
+        df (pd.DataFrame): The survey data as Pandas DataFrame
+        output_file (str): The name of the output file.
+
+    Returns:
+        None
     """
+    if not output_file:
+        raise ValueError('output_file cannot be empty')
+
     try:
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         df.to_csv(output_file, index=False)
@@ -112,6 +146,16 @@ def export_data(df, output_file):
     help='Output CSV filename'
 )
 def analyze(survey_results, output_csv):
+    """
+    This function runs the analysis of the survey data.
+
+    Args: 
+        survey_results (str): The name of the Google Sheet.
+        output_csv (str): The name of the output CSV file.
+
+    Returns:
+        None
+    """
     if survey_results != 'survey_results':
         print('Error: Invalid sheet name! Enter the correct sheet name.')
         return
