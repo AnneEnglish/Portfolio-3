@@ -3,7 +3,7 @@
 
 The Student Survey application was created as my third portfolio project for Code Institute's Diploma in Fullstack Software Development.
 
-Deployed site: [Student Survey Application]()
+Deployed site: [Student Survey Application](https://student-survey-5a3849e30a71.herokuapp.com/)
 
 ---
 
@@ -48,11 +48,11 @@ Another goal for this project was to develop an automated analysis process to ex
 <!-- omit in toc -->
 #### Visitor Goals
 
-As this application was designed for college administration and management first time, frequent and returning vistor goals are the same. Some of these goals are:
+This application was designed for college administration and management, therefore first time, frequent and returning vistor goals are the same. Some of these goals are:
 
-- Create a user friendly platform. This is done by the terminal prompting the user for the name of the survey sheet that they want insights for. Once they type in the survey sheet name and press enter, all the valuable insighs will be displayed.
-- Collect and analyze student feedback from surveys. This is done by implementing a system for collecting, storing and analyzing survey responses.
-- Provide insights for college improvement. The collected feedback is translated into actionable insights. This helps the college to indentify areas of improvement, enhance the learning experience and make data-driven decisions.
+- Create a user friendly platform.
+- Collect and analyze student feedback from surveys.
+- Provide insights for college improvement.
 
 ## Features
 
@@ -98,6 +98,17 @@ Python.
 
 The project was deployed to Heroku using the following steps:
 
+1. Go to [Heroku](https://www.heroku.com/), make sure to have an account set up and log in.
+2. From the dashboard click on "Create a new app".
+3. Name your app (each app name has to be unique) and set your region. When you've done that you can click the purple "Create app" button.
+4. Select settings from the navigation bar for your app, scroll to the "Reveal config vars" button and click it.
+5. In the config vars section for the "key" you want to type in "CREDS" and for the value you want to copy and paste your "creds.json" file. We do this because cred.json is in our .gitignore file as it is sensitive data and in order for our app to run from Heroku we need our creds. When you have done that you can click "Add".
+6. In the settings section, scroll to "Buildpacks" and click "Add buildpack". The first one you should add is python, the second is nodejs. Make sure after you save your changes that python is on top with nodejs underneath.
+7. In the navigation bar for your app select "Deploy".
+8. Connect your Github account to Heroku.
+9. Search for your Github repository name and click "Connect".
+10. You can choose to set up automatic deploys or manual deploy. With automatic deploys Heroku will rebuild your app everytime you make a commit to Github.
+
 ### Local Development
 
 <!-- omit in toc -->
@@ -131,32 +142,46 @@ below to do this:
 
 ## Testing
 
-I tested the code constantly when making changes or adding things to it using the terminal in Codeanywhere.
-
-Some of the issues I was having were:
+I tested the code constantly when making changes or adding things to it using the terminal in Codeanywhere. This proved well as there were bugs that I wasn't aware of.
 
 ### Automated Testing
 
-#### Python Validator
-
-### Manual Testing
+I couldn't find a good python validator online that didn't throw an error because of my imports. I am therefore relying on pylint within my IDE to make sure that my code follows the PEP8 standards.
 
 #### Testing User Stories
 
-### Further Testing
+As I mentioned in my User Stories section this application was designed for college administration and management. Therefore first time, frequent and returning vistor goals are the same.
+
+- Create a user friendly platform: This is done by the terminal prompting the user for the name of the survey sheet that they want insights for. Once they type in the survey sheet name and press enter, all the valuable insighs will be displayed.
+- Collect and analyze student feedback from surveys: This is done by implementing a system for collecting, storing and analyzing survey responses.
+- Provide insights for college improvement: The collected feedback is translated into actionable insights. This helps the college to indentify areas of improvement, enhance the learning experience and make data-driven decisions.
 
 ### Bugs
 
 #### Solved Bugs
 
+- My Google Sheet would not connect to my run.py file: My original credentials wouldn't work so I deleted them and created new credentials. My Google Sheet connected with the new credentials.
+- Pylint kept throwing an error for line 176 in run.py as I didn't pass any arguments to the analyze function: I added in a comment on line 174 ("# pylint: disable=no-value-for-parameter") and that fixed the issue.
+- My analyze function wouldn't create a new output CSV file in the directory: I deleted the code that was suppose to do that and started from the beginning. It fixed the issue so it was probably a typo that I couldn't see.
+
 #### Known Bugs
+
+I don't currently know of any bugs that exist. If I do end up finding any I will add them here.
 
 ## Credits
 
 ### Code
 
+The code from line 10-17 in my run.py file is from the Love Sandwiches Essential Project.
+
 ### Content
+
+The content is from:
+
+- [My Google Forms Survey](https://docs.google.com/forms/d/18yemi__SOtJBqS-ZdNPh2i32FlfCwcDPYfgXct8OU3c/edit?pli=1)
+- My Google Sheet that I created for the survey responses.
+
 
 ### Acknowledgements
 
-I would like to acknowledge the Code Institute Slack channel for their knowledge on Python functions as I was struggling to understand them.
+I would like to acknowledge the Code Institute Slack channel for their knowledge on Python functions as I was struggling to understand them. I undrstand them a lot more now.

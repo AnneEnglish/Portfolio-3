@@ -7,6 +7,7 @@ import gspread
 # Google Sheets API Credentias and Scope
 from google.oauth2.service_account import Credentials
 
+# Lines 10-17 are from Love Sandwiches Essentials Project
 SCOPE = [
     'https://www.googleapis.com/auth/spreadsheets',
     'https://www.googleapis.com/auth/drive',
@@ -90,6 +91,7 @@ def analyze_data(df):
 
     # Get the preferred method of study
     study_method = df['What do you use to study primarily?'].mode().values[0]
+    
     try:
         # Calculate the % of people that prefer the most common study method
         study_method_count = len(df[df['What do you use to study primarily?']
@@ -156,9 +158,6 @@ def analyze(survey_results, output_csv):
     Returns:
         None
     """
-    if survey_results != 'survey_results':
-        print('Error: Invalid sheet name! Enter the correct sheet name.')
-        return
 
     try:
         df = import_data(survey_results)
