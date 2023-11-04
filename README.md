@@ -48,7 +48,7 @@ Another goal for this project was to develop an automated analysis process to ex
 <!-- omit in toc -->
 #### Visitor Goals
 
-This application was designed for college administration and management, therefore first time, frequent and returning vistor goals are the same. Some of these goals are:
+This application was designed for college administration and management, therefore first time, frequent and returning visitor goals are the same. Some of these goals are:
 
 - Create a user friendly platform.
 - Collect and analyze student feedback from surveys.
@@ -107,7 +107,7 @@ The project was deployed to Heroku using the following steps:
 7. In the navigation bar for your app select "Deploy".
 8. Connect your Github account to Heroku.
 9. Search for your Github repository name and click "Connect".
-10. You can choose to set up automatic deploys or manual deploy. With automatic deploys Heroku will rebuild your app everytime you make a commit to Github.
+10. You can choose to set up automatic deploys or manual deploy. With automatic deploys Heroku will rebuild your app every time you make a commit to Github.
 
 ### Local Development
 
@@ -122,7 +122,7 @@ below to do this:
 2. Locate and click on the GitHub Repository for the project you want to fork.
 3. Just below the navigation bar for the repository you will see 'fork'. Click on it will take you to a new page with the title 'Create a new fork'.
 4. On that page make sure the owner is set to your profile and then type in the name you want to give the repository. 
-5. Scroll to the end of the page and in the bottom right hand corner you will see a green button that says 'Create fork', if you click that you should now have a copy of the orginal repository on your Github account.
+5. Scroll to the end of the page and in the bottom right hand corner you will see a green button that says 'Create fork', if you click that you should now have a copy of the original repository on your Github account.
 
 <!-- omit in toc -->
 #### Making a Local Clone
@@ -150,11 +150,11 @@ I couldn't find a good python validator online that didn't throw an error becaus
 
 ### Testing User Stories
 
-As I mentioned in my User Stories section this application was designed for college administration and management. Therefore first time, frequent and returning vistor goals are the same.
+As I mentioned in my User Stories section this application was designed for college administration and management. Therefore first time, frequent and returning visitor goals are the same.
 
-- Create a user friendly platform: This is done by the terminal prompting the user for the name of the survey sheet that they want insights for. Once they type in the survey sheet name and press enter, all the valuable insighs will be displayed.
+- Create a user friendly platform: This is done by the terminal prompting the user for the name of the survey sheet that they want insights for. Once they type in the survey sheet name and press enter, all the valuable insights will be displayed.
 - Collect and analyze student feedback from surveys: This is done by implementing a system for collecting, storing and analyzing survey responses.
-- Provide insights for college improvement: The collected feedback is translated into actionable insights. This helps the college to indentify areas of improvement, enhance the learning experience and make data-driven decisions.
+- Provide insights for college improvement: The collected feedback is translated into actionable insights. This helps the college to identify areas of improvement, enhance the learning experience and make data-driven decisions.
 
 ### Bugs
 
@@ -184,4 +184,4 @@ The content is from:
 
 ### Acknowledgements
 
-I would like to acknowledge the Code Institute Slack channel for their knowledge on Python functions as I was struggling to understand them. I undrstand them a lot more now.
+I would like to acknowledge the Code Institute Slack channel for their knowledge on Python functions as I was struggling to understand them. I understand them a lot more now.
