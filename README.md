@@ -64,7 +64,7 @@ The features in this application are:
 - Data-driven Insights: The application generates insights based on survey data, helping the college make decisions for improvement.
 
 <!-- omit in toc -->
-#### Future Implementations
+### Future Implementations
 
 In future implementations I would like to do the following:
 
