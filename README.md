@@ -3,7 +3,7 @@
 
 The Student Survey application was created as my third portfolio project for Code Institute's Diploma in Fullstack Software Development.
 
-[App deployed on Heroku](images/heroku.png)
+![App deployed on Heroku](images/heroku.png)
 
 Deployed site: [Student Survey Application](https://student-survey-5a3849e30a71.herokuapp.com/)
 
