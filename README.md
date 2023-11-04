@@ -83,14 +83,14 @@ Python.
 ### Libraries, Programs and Packages Used
 
 1. [Git](https://git-scm.com/): For version control.
-2. [Github](https://github.com/): GitHub was used to store and save the
+2. [Github](https://github.com/): was used to store and save the
    projects code after being pushed from Git.
-3. [PIP](https://pypi.org/project/pip/)
-4. [Click](https://click.palletsprojects.com/en/8.1.x/)
-5. [Google-Auth](https://pypi.org/project/google-auth/)
-6. [Gspread](https://docs.gspread.org/en/v5.12.0/)
-7. [Gspread-Pandas](https://pypi.org/project/gspread-pandas/)
-8. [Pandas](https://pandas.pydata.org/)
+3. [PIP](https://pypi.org/project/pip/): was used to install an manage software packages.
+4. [Click](https://click.palletsprojects.com/en/8.1.x/): was used to create command line interfaces (CLI).
+5. [Google-Auth](https://pypi.org/project/google-auth/): was used to authenticate with my Google API.
+6. [Gspread](https://docs.gspread.org/en/v5.12.0/): is a Python API for Google Sheets.
+7. [Gspread-Pandas](https://pypi.org/project/gspread-pandas/): was used to open my Google Spreadsheet and interact with the worksheet through Pandas DataFrame.
+8. [Pandas](https://pandas.pydata.org/): was used to work with my Google Sheet as a DataFrame.
 
 ## Deployment and Local Development
 
