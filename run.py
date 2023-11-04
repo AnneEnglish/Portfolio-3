@@ -91,7 +91,7 @@ def analyze_data(df):
 
     # Get the preferred method of study
     study_method = df['What do you use to study primarily?'].mode().values[0]
-    
+
     try:
         # Calculate the % of people that prefer the most common study method
         study_method_count = len(df[df['What do you use to study primarily?']
