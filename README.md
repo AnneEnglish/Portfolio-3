@@ -85,7 +85,7 @@ Python.
 1. [Git](https://git-scm.com/): For version control.
 2. [Github](https://github.com/): was used to store and save the
    projects code after being pushed from Git.
-3. [PIP](https://pypi.org/project/pip/): was used to install an manage software packages.
+3. [PIP](https://pypi.org/project/pip/): was used to install and manage software packages.
 4. [Click](https://click.palletsprojects.com/en/8.1.x/): was used to create command line interfaces (CLI).
 5. [Google-Auth](https://pypi.org/project/google-auth/): was used to authenticate with my Google API.
 6. [Gspread](https://docs.gspread.org/en/v5.12.0/): is a Python API for Google Sheets.
