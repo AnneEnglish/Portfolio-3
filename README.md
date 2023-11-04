@@ -3,6 +3,8 @@
 
 The Student Survey application was created as my third portfolio project for Code Institute's Diploma in Fullstack Software Development.
 
+[App deployed on Heroku](images/heroku.png)
+
 Deployed site: [Student Survey Application](https://student-survey-5a3849e30a71.herokuapp.com/)
 
 ---
@@ -22,9 +24,7 @@ Deployed site: [Student Survey Application](https://student-survey-5a3849e30a71.
   - [Local Development](#local-development)
 - [Testing](#testing)
   - [Automated Testing](#automated-testing)
-    - [Python Validator](#python-validator)
-  - [Manual Testing](#manual-testing)
-    - [Testing User Stories](#testing-user-stories)
+  - [Testing User Stories](#testing-user-stories)
   - [Further Testing](#further-testing)
   - [Bugs](#bugs)
     - [Solved Bugs](#solved-bugs)
@@ -148,7 +148,7 @@ I tested the code constantly when making changes or adding things to it using th
 
 I couldn't find a good python validator online that didn't throw an error because of my imports. I am therefore relying on pylint within my IDE to make sure that my code follows the PEP8 standards.
 
-#### Testing User Stories
+### Testing User Stories
 
 As I mentioned in my User Stories section this application was designed for college administration and management. Therefore first time, frequent and returning vistor goals are the same.
 
